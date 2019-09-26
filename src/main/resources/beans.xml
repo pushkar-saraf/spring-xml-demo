@@ -8,7 +8,7 @@
            http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
     <bean id="movie" class="com.stackroute.Movie">
-        <property name="actor" ref="actor" />
+        <constructor-arg ref="actor"/>
     </bean>
 
     <bean id="actor"
