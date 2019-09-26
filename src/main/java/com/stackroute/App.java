@@ -19,7 +19,6 @@ public class App
         ClassPathXmlApplicationContext appContext = new ClassPathXmlApplicationContext(
                 "beans.xml");
         Movie beanA = (Movie) appContext.getBean("MovieA");
-        Movie beanB = (Movie) appContext.getBean("MovieB");
-        System.out.println(beanA == beanB);
+        System.out.println(beanA.getActor());
     }
 }
