@@ -10,6 +10,7 @@
     <bean scope="prototype" name="MovieA, MovieB" class="com.stackroute.Movie" autowire="byName">
     </bean>
 
+    <bean id="post" class="com.stackroute.BeanPostProcessorDemoBean"/>
     <bean class="com.stackroute.BeanLifecycleDemoBean"/>
 
     <bean id="actor"
