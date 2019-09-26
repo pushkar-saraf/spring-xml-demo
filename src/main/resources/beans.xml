@@ -5,10 +5,12 @@
            http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
            http://www.springframework.org/schema/aop
-           http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+           http://www.springframework.org/schema/aop/spring-aop-3.0.xsd" default-init-method="onInit" default-destroy-method="onDestroy">
 
     <bean scope="prototype" name="MovieA, MovieB" class="com.stackroute.Movie" autowire="byName">
     </bean>
+
+    <bean class="com.stackroute.BeanLifecycleDemoBean"/>
 
     <bean id="actor"
           class="com.stackroute.Actor">
