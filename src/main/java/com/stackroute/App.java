@@ -19,6 +19,6 @@ public class App
         ClassPathXmlApplicationContext appContext = new ClassPathXmlApplicationContext(
                 "beans.xml");
         Movie beanA = (Movie) appContext.getBean("MovieA");
-        System.out.println(beanA.getActor());
+        System.out.println(beanA);
     }
 }
