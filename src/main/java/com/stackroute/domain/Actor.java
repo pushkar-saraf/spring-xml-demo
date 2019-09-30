@@ -1,12 +1,12 @@
-package com.stackroute;
+package com.stackroute.domain;
 
 public class Actor {
     private String name;
     private String gender;
     private int age;
 
-    public Actor(String name, String gender, int age){
-        this.name= name;
+    public Actor(String name, String gender, int age) {
+        this.name = name;
         this.gender = gender;
         this.age = age;
     }
@@ -37,8 +37,8 @@ public class Actor {
 
     @Override
     public String toString() {
-        return "Name: "+ this.name +
-                "\nAge: "+ this.age+
-                "\nGender: "+ this.gender;
+        return "Name: " + this.name +
+                "\nAge: " + this.age +
+                "\nGender: " + this.gender;
     }
 }

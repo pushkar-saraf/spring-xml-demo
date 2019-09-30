@@ -7,25 +7,25 @@
            http://www.springframework.org/schema/aop
            http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
-    <bean scope="prototype" name="MovieA, MovieB" class="com.stackroute.Movie" autowire="byName">
+    <bean scope="prototype" name="MovieA, MovieB" class="com.stackroute.domain.Movie" autowire="byName">
     </bean>
 
     <bean id="actor"
-          class="com.stackroute.Actor">
+          class="com.stackroute.domain.Actor">
         <constructor-arg index="0" value="Emma Watson"/>
         <constructor-arg index="1" value="female"/>
         <constructor-arg index="2" value="21"/>
     </bean>
 
     <bean id="actor1"
-          class="com.stackroute.Actor">
+          class="com.stackroute.domain.Actor">
         <constructor-arg name="name" value="Daniel Radcliffe"/>
         <constructor-arg name="gender" value="male"/>
         <constructor-arg name="age" value="21"/>
     </bean>
 
     <bean id="actor2"
-          class="com.stackroute.Actor">
+          class="com.stackroute.domain.Actor">
         <constructor-arg type="java.lang.String" value="Rupert"/>
         <constructor-arg type="java.lang.String" value="female"/>
         <constructor-arg type="int" value="21"/>
