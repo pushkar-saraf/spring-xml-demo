@@ -1,4 +1,4 @@
-package com.stackroute;
+package com.stackroute.domain;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;

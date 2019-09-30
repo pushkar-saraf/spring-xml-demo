@@ -1,4 +1,4 @@
-package com.stackroute;
+package com.stackroute.domain;
 
 public class Actor {
     private String name;
